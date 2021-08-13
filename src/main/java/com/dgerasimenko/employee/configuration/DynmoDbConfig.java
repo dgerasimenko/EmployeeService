@@ -29,8 +29,8 @@ public class DynmoDbConfig {
                 )
                 .withCredentials(new AWSStaticCredentialsProvider(
                         new BasicAWSCredentials(
-                                "AKIAXVCZPMM362R5HTBY",
-                        "0ej9wedjHh4Njk8uFEZ1W8ycyfI/4lmF2xTg9af0")))
+                                "",
+                        "")))
                 .build();
     }
 }
