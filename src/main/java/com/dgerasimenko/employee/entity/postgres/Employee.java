@@ -1,4 +1,4 @@
-package com.dgerasimenko.employee.entity;
+package com.dgerasimenko.employee.entity.postgres;
 
 import java.util.Objects;
 

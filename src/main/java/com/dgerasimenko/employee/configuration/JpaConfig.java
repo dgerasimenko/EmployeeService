@@ -1,7 +1,7 @@
 package com.dgerasimenko.employee.configuration;
 
 import com.dgerasimenko.employee.dao.EmployeeRepository;
-import com.dgerasimenko.employee.entity.Employee;
+import com.dgerasimenko.employee.entity.postgres.Employee;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;

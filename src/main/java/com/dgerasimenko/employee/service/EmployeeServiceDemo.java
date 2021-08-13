@@ -1,7 +1,7 @@
 package com.dgerasimenko.employee.service;
 
 import com.dgerasimenko.employee.dao.EmployeeRepository;
-import com.dgerasimenko.employee.entity.Employee;
+import com.dgerasimenko.employee.entity.postgres.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class EmployeeServiceDemo implements EmployeeService {
+public class EmployeeServiceDemo implements RDBMSService<Employee> {
 
     private final EmployeeRepository employeeRepository;
 

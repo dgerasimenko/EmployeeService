@@ -1,7 +1,7 @@
 package com.dgerasimenko.employee.controller;
 
-import com.dgerasimenko.employee.entity.Employee;
-import com.dgerasimenko.employee.service.EmployeeService;
+import com.dgerasimenko.employee.entity.postgres.Employee;
+import com.dgerasimenko.employee.service.RDBMSService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
@@ -14,11 +14,10 @@ import java.util.Optional;
 @RestController
 public class EmployeeController {
 
-    private final EmployeeService employeeService;
-
+    private final RDBMSService<Employee> employeeService;
 
     @Autowired
-    public EmployeeController(@Qualifier("employeeServiceDemo")EmployeeService employeeService) {
+    public EmployeeController(@Qualifier("employeeServiceDemo") RDBMSService employeeService) {
         this.employeeService = employeeService;
     }
 
